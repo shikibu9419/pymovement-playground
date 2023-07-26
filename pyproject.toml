@@ -1,0 +1,33 @@
+[project]
+name = "pymovement-playground"
+version = "0.1.0"
+description = "Add a short description here"
+authors = [
+    { name = "Kazuya Izumi", email = "shikibu9419@gmail.com" }
+]
+dependencies = [
+    "pymovements>=0.15.0",
+    "tobii-research>=1.11.0",
+    "numpy>=1.24.4",
+    "pyautogui>=0.9.54",
+    "pillow>=9.5.0",
+    "pynput>=1.7.6",
+    "screeninfo>=0.8.1",
+    "pywinctl>=0.0.43",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+track = "track:main"
+hello = "pymovement_playground:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
